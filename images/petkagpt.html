@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petulka</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Dancing+Script:wght@400..700&family=Playwrite+HR:wght@100..400&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Globální nastavení stylů pro responsivitu */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Quicksand", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            padding-bottom: 2px;
+        }
+
+        .hore {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center; /* Rovnoměrné rozložení na řádku */
+            background: linear-gradient(45deg, #007bff, #dc143c, #8a2be2, #f0761f);
+            animation: color 12s ease-in-out infinite;
+            height: 95px;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        @keyframes color {
+            0% {
+                background-position: 0 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0 50%;
+            }
+        }
+
+        .petrafotka {
+            width: 100%;
+            height: auto; /* Automatické přizpůsobení výšky podle šířky */
+            display: block;
+        }
+
+        .text {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Vertikální a horizontální zarovnání na střed */
+            font-size: 5vw; /* Použití jednotky viewport width pro responsivní písmo */
+            color: chartreuse;
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .d, .l, .c, .s, .r, .p {
+            cursor: pointer;
+            font-weight: 400;
+            font-size: 1.25em;
+            position: relative;
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease;
+            margin-left: 20px;
+        }
+
+        .d:hover, .l:hover, .c:hover, .s:hover, .r:hover, .p:hover {
+            color: #007bff;
+        }
+
+        .d::after, .l::after, .c::after, .s::after, .r::after, .p::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            height: 2px;
+            background-color: #333;
+            transition: width 0.3s ease;
+        }
+
+        .d:hover::after, .l:hover::after, .c:hover::after, .s:hover::after, .r:hover::after, .p:hover::after {
+            width: 100%;
+        }
+
+        .spodek {
+            background-color: rgb(188, 195, 195);
+            position: relative;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .onlyfotka {
+            position: relative;
+        }
+
+        .obr {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px; /* Vzdálenost mezi sociálními ikonami */
+            
+        }
+
+        .fb, .ig, .tw {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+            vertical-align:top ;
+        }
+
+        .fb{
+            width: 32px;
+            height: 32px;
+        }
+
+        .tw{
+            width: 28px;
+            height: 28px;
+        }
+
+        .fb:hover, .ig:hover, .tw:hover {
+            opacity: 0.6;
+        }
+
+        /* Responsivní úpravy pro mobilní zařízení */
+        @media (max-width: 768px) {
+            .hore {
+                flex-direction: column; /* Přepnout na sloupcové uspořádání pro mobily */
+                height: auto; /* Automatická výška pro obsah */
+                padding: 10px 0;
+            }
+
+            .d, .l, .c, .s, .r, .p {
+                font-size: 18px; /* Menší písmo na mobilu */
+                margin: 5px 0;
+            }
+
+            .text {
+                font-size: 8vw; /* Větší písmo pro mobily */
+                padding: 20px;
+            }
+        }
+
+            .logo{
+            height:80px;
+            width: 80px;
+            margin-right:60px ;
+        }
+
+            .logo2{
+            height:50px;
+            width: 50px;
+            position: absolute;
+            left:1%;
+            bottom:52% ;
+
+
+        }
+        .copy{
+            position: absolute;
+            left:1%;
+            bottom:40% ;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hore">
+        <img class="logo" src="Petra/PETRALOGO.png" alt="">
+        <div class="d">Domů</div>
+        <div class="l">O mne</div>
+        <div class="c">Skills</div>
+        <div class="s">Portfolio</div>
+        <div class="r">Reference</div>
+        <div class="p">Kontakt</div>
+        
+    </div>
+    
+    <div class="onlyfotka">
+        <img class="petrafotka" src="Petra/pepek.jpg" alt="Petra Fotka">
+        <div class="text">Ing. Petra Svobodová</div>
+        <div class="spodek">
+            <div class="obr">
+                <img class="logo2" src="Petra/PETRALOGO.png" alt="">
+                <span class="copy"> <strong>Copyright ©</strong>  2024 Petra Svobodová <strong>Eleanor</strong>  Company. All rights reserved.</span>
+                <a href="https://www.facebook.com/petra.svobodova.568" target="_blank">
+                    <img class="fb" src="Petra/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/petka8s/" target="_blank">
+                    <img class="ig" src="Petra/ins.png" alt="Instagram">
+                </a>
+                <img class="tw" src="Petra/twit.png" alt="Twitter">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<strong></strong>
