@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Antonín Tomeček" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petra Svobodová</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome Icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Delicious+Handrawn&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Indie+Flower&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Giga:wght@100..900&family=Lilita+One&family=Playwrite+IN:wght@100..400&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Smooch+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="100">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <img src="images/petralogo01.png" alt="Logo" class="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Domů</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">O mně</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#konicky">Hobbies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontakt">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Sekce -->
+    <section id="home" class="hero-section">
+      <div class="container text-center">
+        <div class="hello-world">"HELLO WORLD"</div>
+        <div class="name-title">Ing. Petra Svobodová, Ph.D.</div>
+        <div class="job-title">Researcher &middot; Computer Vision</div>
+        <div class="welcome-text"></div>
+        <div class="btnmediv">
+          <button class="btnme">Více o mne</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sekce O mně -->
+    <section id="about" class="section bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Obrázek vlevo -->
+          <div class="col-lg-4 text-center">
+            <img
+              class="image-custom"
+              src="images/petkaabout1.jpg"
+              alt="Profilová fotka"
+            />
+          </div>
+          <!-- Text uprostřed -->
+          <div class="col-lg-8 about-text text-start">
+            Už na gymnáziu jsem objevila svou vášeň pro matematiku a informační
+            technologie, což mě vedlo k dalšímu studiu na VŠB - Technické
+            univerzitě Ostrava, kde jsem se zaměřila na fakultě informatiky
+            zaměřila na obor Informatika a výpočetní technika.<br />
+            Během inženýrského studia jsem se specializovala na analýzu obrazu a
+            počítačovou grafiku, což mě přivedlo k mé současné práci na
+            IT4Innovations. Zde působím jako Researcher, kde se zaměřuji na
+            oblast <strong>Computer Vision</strong>, přičemž využívám AI,
+            pokročilé algoritmy deep learningu a konvoluční neuronové sítě.
+            Kromě toho pracuji na volné noze jako Data Scientist, kde aplikuji
+            své znalosti z oblasti <strong>Machine Learning</strong> k analýze a
+            predikci dat z velkých datových souborů.
+          </div>
+        </div>
+
+        <!-- Druhá část o mně -->
+        <div class="row align-items-center mt-5">
+          <!-- Text vlevo -->
+          <div class="col-lg-8 about-text text-start">
+            <p>
+              Ráda cestuji po světě se svým přítelem, poznávám nová místa,
+              kultury a především sbírám nezapomenutelné zážitky. Svět IT mě
+              fascinoval už od dětství – ráda se učím a aplikuji nové
+              technologie, které usnadňují každodenní život.
+            </p>
+            <p>
+              Ve volném čase se věnuji sportu, horské turistice nebo se
+              vzdělávám v oblastech, které mě nejvíce zajímají.
+            </p>
+          </div>
+          <!-- Obrázek vpravo -->
+          <div class="col-lg-4 text-center">
+            <img
+              class="image-custom"
+              src="images/petkaabout2.jpg"
+              alt="Cestování"
+            />
+          </div>
+        </div>
+
+        <!-- Women in Tech - Centrováno -->
+        <div class="row justify-content-center mt-5">
+          <div class="col-lg-8 text-center">
+            <div class="about-text3">
+              <p>
+                <strong>Women in Tech: Interview</strong><br />
+                with Petra Svobodová,<br />
+                research assistant<br />
+                at IT4Innovations
+              </p>
+              <p class="podtitulek">News from Saturday 10 August 2024</p>
+              <button class="btnclanek">
+                <a
+                  href="https://eumaster4hpc.eu/news/women-in-tech-interview-with-petra-svobodova-research-assistant-at-it4innovations/"
+                  target="_blank"
+                >
+                  Odkaz na článek
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIE, KONÍČKY -->
+    <div class="container text-center">
+      <section id="konicky" class="my-5">
+        <h2 class="text-center text-primary mb-4">
+          <span class="rada">Co mám ráda</span>
+        </h2>
+        <div
+          id="carouselExampleControls"
+          class="carousel slide mx-auto d-block"
+          data-bs-ride="carousel"
+          style="max-width: 700px"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="images/alchymie.webp"
+                class="d-block w-100"
+                alt="Slide 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/bylinky.webp"
+                class="d-block w-100"
+                alt="Slide 2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/zahrada.webp"
+                class="d-block w-100"
+                alt="Slide 3"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/cestuji.webp"
+                class="d-block w-100"
+                alt="Slide 4"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="images/programuji.webp"
+                class="d-block w-100"
+                alt="Slide 5"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Sekce Skills -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <h2 class="text-center mb-5"><span class="skillclass">Skills</span></h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-6">
+            <div class="skill-card small">
+              <h4><i class="fas fa-cogs"></i> Pokročilé technologie</h4>
+              <ul>
+                <li><i class="fas fa-project-diagram"></i> REST API</li>
+                <li><i class="fas fa-code"></i> WebAssembly</li>
+                <li><i class="fas fa-cogs"></i> GraphQL</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="skill-card small">
+              <h4><i class="fas fa-tools"></i> DevOps</h4>
+              <ul>
+                <li><i class="fab fa-docker"></i> Docker</li>
+                <li><i class="fab fa-windows"></i> Windows Server</li>
+                <li><i class="fab fa-linux"></i> Linux Administration</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <div class="text-center mb-4">
+          <p class="portfolio-intro">
+            Jsem hrdá a nadšená IT programátorka, která se nebojí výzev a
+            dotahuje věci do konce.
+          </p>
+        </div>
+
+        <!-- První video -->
+        <div class="row justify-content-center mb-4">
+          <div class="col-lg-8 text-center">
+            <h1 class="textblender">
+              "Blender jako nástroj pro generování syntetických datasetů pro
+              trénink AI modelů"
+            </h1>
+            <iframe
+              class="videopetra"
+              width="100%"
+              height="450"
+              src="https://www.youtube.com/embed/PKPoO_0nNYA?start=53"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Druhé video -->
+        <div class="row justify-content-center mb-4">
+          <div class="col-lg-8 text-center">
+            <h1 class="textblender">
+              "Jak pomáhá 3D rekonstrukce medicínských snímků lékařům?"
+            </h1>
+            <iframe
+              class="videopetra"
+              width="100%"
+              height="450"
+              src="https://www.youtube.com/embed/oKocQus8za4"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt Sekce -->
+    <section id="kontakt" class="contact-section">
+      <div class="container">
+        <h2 class="text-center mb-4">Kontaktní formulář</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <div class="form-container">
+              <form id="contactForm">
+                <label for="jmeno">Jméno</label>
+                <input
+                  type="text"
+                  id="jmeno"
+                  name="jmeno"
+                  class="form-control"
+                  placeholder="Zadejte své jméno"
+                  required
+                />
+
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Zadejte svůj email"
+                  required
+                />
+
+                <label for="zprava">Zpráva</label>
+                <textarea
+                  id="zprava"
+                  name="zprava"
+                  class="form-control"
+                  rows="4"
+                  placeholder="Zadejte svou zprávu..."
+                  required
+                ></textarea>
+
+                <button type="submit" class="btn btn-primary">Odeslat</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontaktní informace -->
+    <div class="container">
+      <section class="contact-info">
+        <h3>Kontaktní informace</h3>
+        <p><i class="fas fa-phone"></i> +420 775 311 149</p>
+        <p><i class="fas fa-envelope"></i> petulka8s@seznam.cz</p>
+        <p><i class="fas fa-map-marker-alt"></i> Strahovice 55</p>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footers">
+      <div class="container">
+        <div class="social-iconss">
+          <a href="https://www.facebook.com/petra.svobodova.568" target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/petka8s/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://x.com/" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+        <div class="copy">
+          &copy; 2025 Antonín Tomeček. Všechna práva vyhrazena.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

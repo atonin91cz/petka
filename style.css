@@ -1,0 +1,547 @@
+/* ==================== */
+/* Obecné styly */
+/* ==================== */
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url("fonts/Caveat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url("fonts/Caveat-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url("fonts/Caveat-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Caveat";
+  src: url("fonts/Caveat-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ==================== */
+/* Navigace (Navbar) */
+/* ==================== */
+.navbar {
+  background: rgba(156, 7, 69, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(156, 7, 69, 0.9);
+}
+
+.btnme {
+  background-color: rgb(156, 7, 69);
+  border-radius: 5px;
+  color: #f8f9fa;
+  padding: 5px 10px;
+}
+
+.btnme:hover {
+  opacity: 0.5;
+}
+
+.logo {
+  width: 65px;
+  transition: transform 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+/* ==================== */
+/* Hero sekce */
+/* ==================== */
+.hero-section {
+  height: 100vh;
+  background: url("images/uvodka01.JPG") no-repeat center center/cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.hello-world {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2.5rem;
+  background: white;
+  color: black;
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.name-title,
+.job-title {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.welcome-text {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.welcome-text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Sekce O mně */
+/* ==================== */
+.section {
+  padding: 80px 0;
+}
+
+.image-custom {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-custom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+}
+
+.about-text {
+  font-family: "Indie Flower", sans-serif;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.about-text3 {
+  color: rgb(26, 19, 74);
+  font-size: 20px;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 35px;
+  margin-top: 30px;
+  align-content: center;
+}
+.podtitulek {
+  color: grey;
+  font-size: 14px;
+  margin-top: 10px; /* Přidá mezeru nad podtitulkem */
+}
+
+.btnclanek {
+  border-style: solid;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  height: 55px;
+  width: 150px;
+  border-radius: 7px;
+  cursor: pointer;
+  text-decoration: none;
+  border-color: lightgray;
+  margin-top: 20px; /* Přidá mezeru nad tlačítkem */
+}
+
+.btnclanek a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btnclanek:hover {
+  opacity: 0.5;
+}
+
+/* ==================== */
+/* Mobilní verze */
+/* ==================== */
+@media (max-width: 768px) {
+  .about-text2 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+
+  .podtitulek {
+    font-size: 12px;
+  }
+
+  .btnclanek {
+    font-size: 14px;
+    height: 45px;
+    width: 130px;
+  }
+}
+
+/* Galerie ___ */
+
+.rada {
+  background-color: rgb(156, 91, 91, 0.5);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 7px;
+}
+.carousel-inner {
+  border-radius: 20px;
+}
+
+.btnclanek:hover {
+  opacity: 0.5;
+}
+
+.btnclanek a:hover {
+  text-decoration: none;
+}
+
+#carouselExampleControls {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+@media (max-width: 768px) {
+  #carouselExampleControls {
+    width: 90%; /* Na mobilních zařízeních téměř plná šířka */
+  }
+}
+/* ==================== */
+/* Sekce Skills */
+/* ==================== */
+.skills-section {
+  padding: 80px 0;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.skillclass {
+  background-color: #1e1e1e;
+  color: #2feb90;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 25px;
+  background: #1e1e1e;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.skill-card h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #0ce5b2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-card h4 i {
+  font-size: 32px;
+  margin-bottom: 5px;
+  color: #0ce5b2;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+/* ==================== */
+/* Sekce Portfolio */
+/* ==================== */
+.portfolio-intro {
+  font-size: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  font-style: italic;
+}
+.textblender {
+  font-family: "Delicious Handrawn";
+  font-size: 30px;
+  color: rgb(54, 18, 87);
+  margin-top: 30px;
+}
+
+.videopetra {
+  margin-bottom: 30px; /* Vytvoří mezeru mezi videi */
+}
+
+.videomove,
+.videomove2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+/* ==================== */
+/* Kontaktní sekce */
+/* ==================== */
+.contact-section {
+  padding: 60px 0;
+  scroll-margin-top: 100px;
+}
+
+.form-container {
+  background: rgba(156, 7, 69, 0.5);
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+}
+
+.form-container label {
+  color: white;
+  font-weight: bold;
+}
+
+.form-container .form-control {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.form-container button {
+  background: #0ce5b2;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-container button:hover {
+  background: #0aa888;
+  transform: scale(1.05);
+}
+
+.contact-info {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.contact-info h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: #0ce5b2;
+}
+
+/* ==================== */
+/* Footer */
+/* ==================== */
+.footer,
+.footers {
+  background: #212529;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .social-icons,
+.footers .social-iconss {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer .social-icons a,
+.footers .social-iconss a {
+  color: white;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.footer .social-icons a:hover,
+.footers .social-iconss a:hover {
+  color: #0ce5b2;
+}
+
+.footer .copy,
+.footers .copy {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* ==================== */
+/* Animace */
+/* ==================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==================== */
+/* Mobilní verze */
+/* ==================== */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 60px;
+  }
+  .carouselExampleControls {
+    width: 58%;
+  }
+
+  .hello-world {
+    font-size: 2rem;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .name-title {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+  }
+
+  .job-title {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .welcome-text {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    transform: translateX(-50%);
+  }
+  .btnmediv {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translateX(-50%);
+  }
+
+  .skill-card {
+    margin-bottom: 20px;
+  }
+
+  .skills-section .col-lg-4,
+  .skills-section .col-md-6 {
+    margin-bottom: 10px;
+  }
+}
+
+/* ==================== */
+/* Desktopová verze */
+/* ==================== */
+@media (min-width: 769px) {
+  .hero-section {
+    padding-top: 100px;
+  }
+
+  .name-title {
+    font-size: 2.2rem;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .job-title {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 28px;
+  }
+
+  .welcome-text {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
